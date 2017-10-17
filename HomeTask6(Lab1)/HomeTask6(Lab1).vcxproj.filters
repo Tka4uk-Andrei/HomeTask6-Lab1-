@@ -13,17 +13,20 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Input">
-      <UniqueIdentifier>{37a9ea2d-f2ab-4448-9d83-280123902bd4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Output">
-      <UniqueIdentifier>{9f6ed78a-8b18-4d1c-9953-27f0b78a1b99}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Structures">
       <UniqueIdentifier>{88efed4b-c16e-4c23-8700-572f8e826cd2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Solution algo">
       <UniqueIdentifier>{f2e10b59-dab6-452f-88f5-35797277f791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\In out">
+      <UniqueIdentifier>{50930ae6-1a83-4f33-b44d-c82c9fabd28b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\In out\Output">
+      <UniqueIdentifier>{9f6ed78a-8b18-4d1c-9953-27f0b78a1b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\In out\Input">
+      <UniqueIdentifier>{37a9ea2d-f2ab-4448-9d83-280123902bd4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -31,7 +34,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IntArrIn.cpp">
-      <Filter>Header Files\Input</Filter>
+      <Filter>Header Files\In out\Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -47,16 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CharArrIn.h">
-      <Filter>Header Files\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="InOut.h">
-      <Filter>Header Files\Output</Filter>
+      <Filter>Header Files\In out\Input</Filter>
     </ClInclude>
     <ClInclude Include="Input.h">
-      <Filter>Header Files\Input</Filter>
+      <Filter>Header Files\In out\Input</Filter>
     </ClInclude>
     <ClInclude Include="Output.h">
-      <Filter>Header Files\Output</Filter>
+      <Filter>Header Files\In out\Output</Filter>
     </ClInclude>
     <ClInclude Include="dyn_arr.h">
       <Filter>Header Files\Structures</Filter>
@@ -66,6 +66,9 @@
     </ClInclude>
     <ClInclude Include="task2.h">
       <Filter>Header Files\Solution algo</Filter>
+    </ClInclude>
+    <ClInclude Include="InOut.h">
+      <Filter>Header Files\In out</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
