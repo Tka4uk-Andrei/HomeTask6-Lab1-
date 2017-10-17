@@ -142,6 +142,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="IntArrIn.cpp" />
+    <ClCompile Include="variant_2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="description.txt" />
+    <Text Include="input.txt" />
+    <Text Include="Status.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharArrIn.h" />
+    <ClInclude Include="dyn_arr.h" />
+    <ClInclude Include="InOut.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Output.h" />
+    <ClInclude Include="task1.h" />
+    <ClInclude Include="task2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
