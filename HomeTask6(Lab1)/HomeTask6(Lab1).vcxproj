@@ -142,7 +142,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="IntArrIn.cpp" />
     <ClCompile Include="variant_2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,11 +150,20 @@
     <Text Include="Status.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CharArrIn.h" />
+    <ClInclude Include="consoleReadChar.h" />
+    <ClInclude Include="consoleReadInt.h" />
     <ClInclude Include="dyn_arr.h" />
+    <ClInclude Include="fileNames.h" />
+    <ClInclude Include="filereadChar.h" />
+    <ClInclude Include="fileReadInt.h" />
     <ClInclude Include="InOut.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Output.h" />
+    <ClInclude Include="readCharArr.h" />
+    <ClInclude Include="readCharStream.h" />
+    <ClInclude Include="readIntArr.h" />
+    <ClInclude Include="readIntStream.h" />
+    <ClInclude Include="readType.h" />
     <ClInclude Include="task1.h" />
     <ClInclude Include="task2.h" />
   </ItemGroup>

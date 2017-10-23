@@ -1,5 +1,5 @@
-#include "dyn_arr.h"
 #include <algorithm>
+#include "dyn_arr.h"
 
 inline dynCharArr fillEndOfArr(dynCharArr arr, dynCharArr fullArr,  int startPos)
 {

@@ -13,9 +13,9 @@ inline dynIntArr posAndNegArrOrg(dynIntArr arr)
 	int r = arr.len - 1;
 	while (l < r)
 	{
-		for (;l < r && arr.arr[l] < 0; ++l)
+		for (;l < r && arr.arr[l] < 0; ++l){}
 
-		for (;l < r && arr.arr[r] >= 0; --r)
+		for (;l < r && arr.arr[r] >= 0; --r){}
 
 		if (arr.arr[l] >= 0 && arr.arr[r] < 0)
 		{
