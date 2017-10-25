@@ -146,9 +146,21 @@
     <ClCompile Include="variant_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="1inputTask1.txt" />
+    <Text Include="1inputTask2.txt" />
+    <Text Include="2inputTask1.txt" />
+    <Text Include="2inputTask2.txt" />
+    <Text Include="3inputTask1.txt" />
+    <Text Include="3inputTask2.txt" />
+    <Text Include="4inputTask1.txt" />
+    <Text Include="4inputTask2.txt" />
+    <Text Include="5inputTask1.txt" />
+    <Text Include="5inputTask2.txt" />
     <Text Include="description.txt" />
     <Text Include="input.txt" />
+    <Text Include="inputTask2.txt" />
     <Text Include="Status.txt" />
+    <Text Include="inputTask1.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="consoleReadChar.h" />

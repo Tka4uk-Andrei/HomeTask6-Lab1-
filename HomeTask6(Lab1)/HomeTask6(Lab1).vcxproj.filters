@@ -37,6 +37,12 @@
     <Filter Include="Resource Files\Tests">
       <UniqueIdentifier>{787ed0a7-24f7-4f9d-b9af-4eac01eb990b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Tests\Task1">
+      <UniqueIdentifier>{2d096633-39c6-4d2b-a238-254def3ea645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Tests\Task2">
+      <UniqueIdentifier>{749f9c38-0508-4744-a46c-192a2849e38b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="variant_2.cpp">
@@ -55,6 +61,42 @@
     </Text>
     <Text Include="input.txt">
       <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="inputTask1.txt">
+      <Filter>Resource Files\Tests</Filter>
+    </Text>
+    <Text Include="inputTask2.txt">
+      <Filter>Resource Files\Tests</Filter>
+    </Text>
+    <Text Include="5inputTask1.txt">
+      <Filter>Resource Files\Tests\Task1</Filter>
+    </Text>
+    <Text Include="4inputTask1.txt">
+      <Filter>Resource Files\Tests\Task1</Filter>
+    </Text>
+    <Text Include="3inputTask1.txt">
+      <Filter>Resource Files\Tests\Task1</Filter>
+    </Text>
+    <Text Include="2inputTask1.txt">
+      <Filter>Resource Files\Tests\Task1</Filter>
+    </Text>
+    <Text Include="1inputTask1.txt">
+      <Filter>Resource Files\Tests\Task1</Filter>
+    </Text>
+    <Text Include="1inputTask2.txt">
+      <Filter>Resource Files\Tests\Task2</Filter>
+    </Text>
+    <Text Include="2inputTask2.txt">
+      <Filter>Resource Files\Tests\Task2</Filter>
+    </Text>
+    <Text Include="3inputTask2.txt">
+      <Filter>Resource Files\Tests\Task2</Filter>
+    </Text>
+    <Text Include="4inputTask2.txt">
+      <Filter>Resource Files\Tests\Task2</Filter>
+    </Text>
+    <Text Include="5inputTask2.txt">
+      <Filter>Resource Files\Tests\Task2</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

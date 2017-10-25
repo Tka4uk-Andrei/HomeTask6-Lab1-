@@ -12,7 +12,7 @@ int main()
 	cout << "------\n";
 
 	int count;
-/*
+
 	auto arr = readIntArr(count);
 	for (int i = 0; i < count; ++i)
 	{
@@ -26,7 +26,7 @@ int main()
 			return 0;
 		}
 		delete[] arr[i].arr;
-	}*/
+	}
 	
 	cout << "------\n";
 	cout << "Task 2\n";
@@ -36,9 +36,17 @@ int main()
 
 	for (int i = 0; i < count; ++i)
 	{
-		printArr(stringUnite(arrChar[i].arr1, arrChar[i].arr2));
+		auto prom = stringUnite(arrChar[i].arr1, arrChar[i].arr2);
+		printArr(prom);
+
+		delete[] prom.arr;
+	 	delete[] arrChar[i].arr1.arr;
+		delete[] arrChar[i].arr2.arr;
+
 		cout << "\n";
 	}
+
+	delete[] arrChar;
 
 	return 0;
 }
