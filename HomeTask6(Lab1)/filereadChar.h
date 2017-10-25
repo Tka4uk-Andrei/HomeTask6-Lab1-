@@ -1,12 +1,20 @@
-#pragma once
 #include <fstream>
-#include "readCharStream.h"
 #include "dyn_arr.h"
+#include "readCharStream.h"
 
 using namespace std;
 
-inline dynCharArr fileReadChar(string fileName, int count)
+inline dynCharArrPair* fileReadChar(string fileName, int pairCount)
 {
 	ifstream input(fileName);
-	return readCharStream(input, 1)[0];
+
+	dynCharArrPair* arr = new dynCharArrPair[pairCount];
+
+	for (int j = 0; j < pairCount; ++j)
+	{
+		arr[j].arr1 = readCharStream(input);
+		arr[j].arr2 = readCharStream(input);
+	}
+
+	return arr;
 }

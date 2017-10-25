@@ -6,13 +6,16 @@
 
 using namespace std;
 
-inline dynCharArr* consoleReadChar(int count)
+inline dynCharArrPair* consoleReadChar(int pairCount)
 {
-	dynCharArr* dynArr = new dynCharArr[count];
+	dynCharArrPair* dynArr = new dynCharArrPair[pairCount];
 
-	for (int i = 0; i < count; ++i) {
-		cout << "Enter array len, then values";
-		dynArr[i] = readCharStream(cin, 1)[0];
+	for (int j = 0; j < pairCount; ++j)
+	{
+		cout << "Enter array len, then values ";
+		dynArr[j].arr1 = readCharStream(cin);
+		cout << "Enter array len, then values ";
+		dynArr[j].arr2 = readCharStream(cin);
 	}
 
 	return dynArr;

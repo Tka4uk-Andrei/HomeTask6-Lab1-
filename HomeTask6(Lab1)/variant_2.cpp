@@ -11,13 +11,34 @@ int main()
 	cout << "Task 1\n";
 	cout << "------\n";
 
-	printArr(posAndNegArrOrg(readIntArr()));
-
+	int count;
+/*
+	auto arr = readIntArr(count);
+	for (int i = 0; i < count; ++i)
+	{
+		try
+		{
+			printArr(posAndNegArrOrg(arr[i]));
+		}
+		catch (string errStr)
+		{
+			cout << errStr;
+			return 0;
+		}
+		delete[] arr[i].arr;
+	}*/
+	
 	cout << "------\n";
 	cout << "Task 2\n";
 	cout << "------\n";
 
-	printArr(stringUnite(readCharArr(1)[0], readCharArr(1)[0]));
+	auto arrChar = readCharArr(count);
+
+	for (int i = 0; i < count; ++i)
+	{
+		printArr(stringUnite(arrChar[i].arr1, arrChar[i].arr2));
+		cout << "\n";
+	}
 
 	return 0;
 }

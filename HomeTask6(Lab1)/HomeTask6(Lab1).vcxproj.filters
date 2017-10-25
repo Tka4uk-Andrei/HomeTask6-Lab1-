@@ -34,10 +34,16 @@
     <Filter Include="Header Files\In out\Output">
       <UniqueIdentifier>{9f6ed78a-8b18-4d1c-9953-27f0b78a1b99}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Tests">
+      <UniqueIdentifier>{787ed0a7-24f7-4f9d-b9af-4eac01eb990b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="variant_2.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileReadType.h">
+      <Filter>Header Files\In out\Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,9 +58,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Input.h">
-      <Filter>Header Files\In out\Input</Filter>
-    </ClInclude>
     <ClInclude Include="Output.h">
       <Filter>Header Files\In out\Output</Filter>
     </ClInclude>
@@ -85,9 +88,6 @@
     <ClInclude Include="readIntArr.h">
       <Filter>Header Files\In out\Input\Int</Filter>
     </ClInclude>
-    <ClInclude Include="readCharStream.h">
-      <Filter>Header Files\In out\Input\Char</Filter>
-    </ClInclude>
     <ClInclude Include="filereadChar.h">
       <Filter>Header Files\In out\Input\Char</Filter>
     </ClInclude>
@@ -98,6 +98,12 @@
       <Filter>Header Files\In out\Input\Char</Filter>
     </ClInclude>
     <ClInclude Include="readType.h">
+      <Filter>Header Files\In out\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="readCharStream.h">
+      <Filter>Header Files\In out\Input\Char</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
       <Filter>Header Files\In out\Input</Filter>
     </ClInclude>
   </ItemGroup>

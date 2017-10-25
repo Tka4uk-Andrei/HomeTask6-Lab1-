@@ -3,8 +3,8 @@
 
 inline dynCharArr fillEndOfArr(dynCharArr arr, dynCharArr fullArr,  int startPos)
 {
-	for (int i = startPos; i < arr.len; ++i)
-		arr.arr[i] = fullArr.arr[i];
+	for (int i = startPos; i < fullArr.len; ++i)
+		arr.arr[startPos + i] = fullArr.arr[i];
 
 	return arr;
 }

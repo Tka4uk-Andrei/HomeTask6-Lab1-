@@ -1,6 +1,7 @@
 #pragma once
 
 #include "readIntStream.h"
+#include <fstream>
 
 inline dynIntArr fileReadInt(string fileName)
 {

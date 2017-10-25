@@ -9,12 +9,13 @@ inline dynIntArr readIntStream(istream &input)
 {
 	dynIntArr arr;
 
-	if (!(input >> arr.len))
-		throw new exception;
+	if (!(input >> arr.len) && !arr.len > 0)
+		throw "Value must be positive integer";
 
 	arr.arr = new int[arr.len];
 	for (int i = 0; i < arr.len; ++i)
-		input >> arr.arr[i];
+		if (!(input >> arr.arr[i]))
+			throw "Values must be integers";
 
 	return arr;
 }

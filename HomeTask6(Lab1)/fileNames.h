@@ -1,4 +1,4 @@
 #pragma once
-#include <string>
 
-const std::string INPUT_FILE_NAME = "input.txt";
+const std::string INPUT_FIRST_FILE_NAME = "inputTask1.txt";
+const std::string INPUT_SECOND_FILE_NAME = "inputTask2.txt";

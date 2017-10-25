@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-enum readTypes {console, file, random};
+enum readTypes {console, file};
 
 using namespace std;
 
@@ -11,15 +11,12 @@ inline int getReadType()
 	{
 		cout << "Enter \'1\' if you want to print into console\n";
 		cout << "Enter \'2\' if you want to get info from file\n";
-		cout << "Enter \'3\' if you want to generate randome values\n";
 
-		int a;
+		char a;
+		cin >> a;
 
-		if(!(cin >> a))
-
-
-		if (a == console || a == file || a == random)
-			return a;
+		if (int(a - '1') == console || int(a - '1') == file)
+			return int(a - '1');
 
 		cout << "Value isn't correct. Re-enter values\n\n";
 	}

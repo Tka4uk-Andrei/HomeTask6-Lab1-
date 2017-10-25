@@ -5,16 +5,13 @@
 
 using namespace std;
 
-inline dynCharArr* readCharStream(istream &input, int count)
+inline dynCharArr readCharStream(istream &input)
 {
-	dynCharArr* arr = new dynCharArr[count];
+	dynCharArr arr;
+	input >> arr.len;
+	arr.arr = new char[arr.len];
+	for (int i = 0; i < arr.len; ++i)
+		input >> arr.arr[i];
 
-	for (int j = 0; j < count; ++j)
-	{
-		input >> arr[j].len;
-		arr[j].arr = new char[arr[j].len];
-		for (int i = 0; i < arr[j].len; ++i)
-			input >> arr[j].arr[i];
-	}
-	return arr;
+	return  arr;
 }

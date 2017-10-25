@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fileReadType.h" />
     <ClCompile Include="variant_2.cpp" />
   </ItemGroup>
   <ItemGroup>
