@@ -1,6 +1,7 @@
 #pragma once
 
 #include "readIntStream.h"
+#include <string>
 
 inline dynIntArr* consoleReadInt()
 {
@@ -8,6 +9,7 @@ inline dynIntArr* consoleReadInt()
 	for (int i = 0; i < 1; ++i)
 	{
 		cout << "Enter array len, then values ";
+
 		arr[i] = readIntStream( cin );
 	}
 

@@ -156,10 +156,7 @@
     <Text Include="4inputTask2.txt" />
     <Text Include="5inputTask1.txt" />
     <Text Include="5inputTask2.txt" />
-    <Text Include="description.txt" />
-    <Text Include="input.txt" />
     <Text Include="inputTask2.txt" />
-    <Text Include="Status.txt" />
     <Text Include="inputTask1.txt" />
   </ItemGroup>
   <ItemGroup>
