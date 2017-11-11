@@ -1,19 +1,8 @@
-#include <iostream>
-#include "dyn_arr.h"
-
-
-inline void printArr(dynIntArr dynArr)
+template<class T>
+void printArr(T dynArr)
 {
 	for (int i = 0; i < dynArr.len; ++i)
-		cout << dynArr.arr[i] << " ";
+		std::cout << dynArr.arr[i] << " ";
 
-	cout << "\n";
-}
-
-inline void printArr(dynCharArr dynArr)
-{
-	for (int i = 0; i < dynArr.len; ++i)
-		cout << dynArr.arr[i] << " ";
-
-	cout << "\n";
+	std::cout << "\n";
 }

@@ -142,7 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="fileReadType.h" />
+    <ClCompile Include="char_input.cpp" />
+    <ClCompile Include="file_prefix.cpp" />
+    <ClCompile Include="int_input.cpp" />
+    <ClCompile Include="solution_algs.cpp" />
+    <ClCompile Include="task_execution.cpp" />
     <ClCompile Include="variant_2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -156,26 +160,14 @@
     <Text Include="4inputTask2.txt" />
     <Text Include="5inputTask1.txt" />
     <Text Include="5inputTask2.txt" />
-    <Text Include="inputTask2.txt" />
-    <Text Include="inputTask1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="consoleReadChar.h" />
-    <ClInclude Include="consoleReadInt.h" />
+    <ClInclude Include="task_execution.h" />
     <ClInclude Include="dyn_arr.h" />
     <ClInclude Include="fileNames.h" />
-    <ClInclude Include="filereadChar.h" />
-    <ClInclude Include="fileReadInt.h" />
-    <ClInclude Include="InOut.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Output.h" />
-    <ClInclude Include="readCharArr.h" />
-    <ClInclude Include="readCharStream.h" />
-    <ClInclude Include="readIntArr.h" />
-    <ClInclude Include="readIntStream.h" />
-    <ClInclude Include="readType.h" />
-    <ClInclude Include="task1.h" />
-    <ClInclude Include="task2.h" />
+    <ClInclude Include="solution_algs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

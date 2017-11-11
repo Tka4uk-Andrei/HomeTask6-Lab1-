@@ -12,23 +12,8 @@
     <Filter Include="Header Files\Structures">
       <UniqueIdentifier>{88efed4b-c16e-4c23-8700-572f8e826cd2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Solution algo">
-      <UniqueIdentifier>{f2e10b59-dab6-452f-88f5-35797277f791}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\In out">
       <UniqueIdentifier>{50930ae6-1a83-4f33-b44d-c82c9fabd28b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\In out\Input">
-      <UniqueIdentifier>{37a9ea2d-f2ab-4448-9d83-280123902bd4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\In out\Input\Char">
-      <UniqueIdentifier>{1f5079c5-32e1-4dc4-952f-8d6b0e552f27}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\In out\Input\Int">
-      <UniqueIdentifier>{223c197e-7478-4133-bbfb-c17e4cd4a5eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\In out\Output">
-      <UniqueIdentifier>{9f6ed78a-8b18-4d1c-9953-27f0b78a1b99}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files\Tests">
       <UniqueIdentifier>{787ed0a7-24f7-4f9d-b9af-4eac01eb990b}</UniqueIdentifier>
@@ -43,22 +28,31 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{34a3f5b3-a74f-4003-b470-dd2547aa5d57}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="variant_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fileReadType.h">
-      <Filter>Header Files\In out\Input</Filter>
+    <ClCompile Include="solution_algs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="task_execution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="char_input.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="int_input.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="file_prefix.cpp">
+      <Filter>Source Files\Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="inputTask1.txt">
-      <Filter>Resource Files\Tests</Filter>
-    </Text>
-    <Text Include="inputTask2.txt">
-      <Filter>Resource Files\Tests</Filter>
-    </Text>
     <Text Include="5inputTask1.txt">
       <Filter>Resource Files\Tests\Task1</Filter>
     </Text>
@@ -91,53 +85,23 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Output.h">
-      <Filter>Header Files\In out\Output</Filter>
-    </ClInclude>
     <ClInclude Include="dyn_arr.h">
       <Filter>Header Files\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="task1.h">
-      <Filter>Header Files\Solution algo</Filter>
-    </ClInclude>
-    <ClInclude Include="task2.h">
-      <Filter>Header Files\Solution algo</Filter>
-    </ClInclude>
-    <ClInclude Include="InOut.h">
-      <Filter>Header Files\In out</Filter>
     </ClInclude>
     <ClInclude Include="fileNames.h">
       <Filter>Header Files\In out</Filter>
     </ClInclude>
-    <ClInclude Include="readIntStream.h">
-      <Filter>Header Files\In out\Input\Int</Filter>
+    <ClInclude Include="solution_algs.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fileReadInt.h">
-      <Filter>Header Files\In out\Input\Int</Filter>
+    <ClInclude Include="task_execution.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="consoleReadInt.h">
-      <Filter>Header Files\In out\Input\Int</Filter>
-    </ClInclude>
-    <ClInclude Include="readIntArr.h">
-      <Filter>Header Files\In out\Input\Int</Filter>
-    </ClInclude>
-    <ClInclude Include="filereadChar.h">
-      <Filter>Header Files\In out\Input\Char</Filter>
-    </ClInclude>
-    <ClInclude Include="consoleReadChar.h">
-      <Filter>Header Files\In out\Input\Char</Filter>
-    </ClInclude>
-    <ClInclude Include="readCharArr.h">
-      <Filter>Header Files\In out\Input\Char</Filter>
-    </ClInclude>
-    <ClInclude Include="readType.h">
-      <Filter>Header Files\In out\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="readCharStream.h">
-      <Filter>Header Files\In out\Input\Char</Filter>
+    <ClInclude Include="Output.h">
+      <Filter>Header Files\In out</Filter>
     </ClInclude>
     <ClInclude Include="Input.h">
-      <Filter>Header Files\In out\Input</Filter>
+      <Filter>Header Files\In out</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
