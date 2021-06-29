@@ -1,12 +1,12 @@
-#include "dyn_arr.h"
+п»ї#include "dyn_arr.h"
 #include <algorithm>
 
 /// <summary>
-/// Меняет два элемента массива местами
+/// РњРµРЅСЏРµС‚ РґРІР° СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР° РјРµСЃС‚Р°РјРё
 /// </summary>
-/// <param name="arr">массив</param>
-/// <param name="i">i - элемент</param>
-/// <param name="j">j - элемент</param>
+/// <param name="arr">РјР°СЃСЃРёРІ</param>
+/// <param name="i">i - СЌР»РµРјРµРЅС‚</param>
+/// <param name="j">j - СЌР»РµРјРµРЅС‚</param>
 inline void swap(int arr[], int i, int j)
 {
 	int prom = arr[i];
@@ -15,10 +15,10 @@ inline void swap(int arr[], int i, int j)
 }
 
 /// <summary>
-/// Организует массив. Сначала отрицательные числа, потом все оставшиеся.
+/// РћСЂРіР°РЅРёР·СѓРµС‚ РјР°СЃСЃРёРІ. РЎРЅР°С‡Р°Р»Р° РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рµ С‡РёСЃР»Р°, РїРѕС‚РѕРј РІСЃРµ РѕСЃС‚Р°РІС€РёРµСЃСЏ.
 /// </summary>
 /// <param name="arr"></param>
-/// <returns>Возварщает сформированный по правилу массив.</returns>
+/// <returns>Р’РѕР·РІР°СЂС‰Р°РµС‚ СЃС„РѕСЂРјРёСЂРѕРІР°РЅРЅС‹Р№ РїРѕ РїСЂР°РІРёР»Сѓ РјР°СЃСЃРёРІ.</returns>
 dynIntArr posAndNegArrOrg(dynIntArr arr)
 {
 	int l = 0;
@@ -41,12 +41,12 @@ dynIntArr posAndNegArrOrg(dynIntArr arr)
 }
 
 /// <summary>
-/// Заполняет массива до конца другой частью массива
+/// Р—Р°РїРѕР»РЅСЏРµС‚ РјР°СЃСЃРёРІР° РґРѕ РєРѕРЅС†Р° РґСЂСѓРіРѕР№ С‡Р°СЃС‚СЊСЋ РјР°СЃСЃРёРІР°
 /// </summary>
-/// <param name="arr">массив требующий заполнения</param>
-/// <param name="fullArr">массив, который заполняет arr</param>
-/// <param name="startPos">с какой позиции заполнять и начинать копирование</param>
-/// <returns>заполненый массив</returns>
+/// <param name="arr">РјР°СЃСЃРёРІ С‚СЂРµР±СѓСЋС‰РёР№ Р·Р°РїРѕР»РЅРµРЅРёСЏ</param>
+/// <param name="fullArr">РјР°СЃСЃРёРІ, РєРѕС‚РѕСЂС‹Р№ Р·Р°РїРѕР»РЅСЏРµС‚ arr</param>
+/// <param name="startPos">СЃ РєР°РєРѕР№ РїРѕР·РёС†РёРё Р·Р°РїРѕР»РЅСЏС‚СЊ Рё РЅР°С‡РёРЅР°С‚СЊ РєРѕРїРёСЂРѕРІР°РЅРёРµ</param>
+/// <returns>Р·Р°РїРѕР»РЅРµРЅС‹Р№ РјР°СЃСЃРёРІ</returns>
  dynCharArr fillEndOfArr(dynCharArr arr, dynCharArr fullArr, int startPos)
 {
 	for (int i = startPos; i < fullArr.len; ++i)
@@ -56,15 +56,15 @@ dynIntArr posAndNegArrOrg(dynIntArr arr)
 }
  
  /// <summary>
- /// Заполняет первый массив до тех пор пока 
- /// не кончится один из двух следующих по правилу
+ /// Р—Р°РїРѕР»РЅСЏРµС‚ РїРµСЂРІС‹Р№ РјР°СЃСЃРёРІ РґРѕ С‚РµС… РїРѕСЂ РїРѕРєР° 
+ /// РЅРµ РєРѕРЅС‡РёС‚СЃСЏ РѕРґРёРЅ РёР· РґРІСѓС… СЃР»РµРґСѓСЋС‰РёС… РїРѕ РїСЂР°РІРёР»Сѓ
  /// a[0] b[0] a[1] b[1] ... a[A_LEN] b[A_LEN]
  /// </summary>
- /// <param name="arr">Массив требующий заполнения</param>
- /// <param name="arrA">Массив 1 с которого производиться копирование</param>
- /// <param name="arrB">Массив 2 с которого производиться копирование</param>
+ /// <param name="arr">РњР°СЃСЃРёРІ С‚СЂРµР±СѓСЋС‰РёР№ Р·Р°РїРѕР»РЅРµРЅРёСЏ</param>
+ /// <param name="arrA">РњР°СЃСЃРёРІ 1 СЃ РєРѕС‚РѕСЂРѕРіРѕ РїСЂРѕРёР·РІРѕРґРёС‚СЊСЃСЏ РєРѕРїРёСЂРѕРІР°РЅРёРµ</param>
+ /// <param name="arrB">РњР°СЃСЃРёРІ 2 СЃ РєРѕС‚РѕСЂРѕРіРѕ РїСЂРѕРёР·РІРѕРґРёС‚СЊСЃСЏ РєРѕРїРёСЂРѕРІР°РЅРёРµ</param>
  /// <returns>
- /// Возвращает заполненный массив arr
+ /// Р’РѕР·РІСЂР°С‰Р°РµС‚ Р·Р°РїРѕР»РЅРµРЅРЅС‹Р№ РјР°СЃСЃРёРІ arr
  /// </returns>
 inline dynCharArr fillEqualLenPart(dynCharArr arr, dynCharArr arrA, dynCharArr arrB)
 {
@@ -83,13 +83,13 @@ inline dynCharArr fillEqualLenPart(dynCharArr arr, dynCharArr arrA, dynCharArr a
 }
 
 /// <summary>
-/// Объединяет два char массива в один по правилу 
+/// РћР±СЉРµРґРёРЅСЏРµС‚ РґРІР° char РјР°СЃСЃРёРІР° РІ РѕРґРёРЅ РїРѕ РїСЂР°РІРёР»Сѓ 
 /// a[0] b[0] a[1] b[1] ... a[A_LEN] b[A_LEN] b[A_LEN + 1] ... b[B_LEN]
 /// </summary>
-/// <param name="arrA">описание arrA</param>
-/// <param name="arrB">описание arrB</param>
+/// <param name="arrA">РѕРїРёСЃР°РЅРёРµ arrA</param>
+/// <param name="arrB">РѕРїРёСЃР°РЅРёРµ arrB</param>
 /// <returns>
-/// Возвращает сформированный массив
+/// Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃС„РѕСЂРјРёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ
 /// </returns>
 dynCharArr stringUnite(dynCharArr arrA, dynCharArr arrB)
 {

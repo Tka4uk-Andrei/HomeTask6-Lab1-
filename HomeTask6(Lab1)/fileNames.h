@@ -1,19 +1,19 @@
-#pragma once
+п»ї#pragma once
 
 /// <summary>
-/// Имя файла для первого теста
+/// РРјСЏ С„Р°Р№Р»Р° РґР»СЏ РїРµСЂРІРѕРіРѕ С‚РµСЃС‚Р°
 /// </summary>
 const std::string INPUT_FIRST_FILE_NAME = "inputTask1.txt";
 
 /// <summary>
-/// Имя файла для второго теста
+/// РРјСЏ С„Р°Р№Р»Р° РґР»СЏ РІС‚РѕСЂРѕРіРѕ С‚РµСЃС‚Р°
 /// </summary>
 const std::string INPUT_SECOND_FILE_NAME = "inputTask2.txt";
 
 /// <summary>
-/// Считывание целого числа - префикса файла
+/// РЎС‡РёС‚С‹РІР°РЅРёРµ С†РµР»РѕРіРѕ С‡РёСЃР»Р° - РїСЂРµС„РёРєСЃР° С„Р°Р№Р»Р°
 /// </summary>
 /// <returns>
-/// Префикс файла
+/// РџСЂРµС„РёРєСЃ С„Р°Р№Р»Р°
 /// </returns>
 inline int filePrefix();
