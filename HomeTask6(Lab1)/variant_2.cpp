@@ -13,8 +13,8 @@ int main()
 	}
 	catch (string errStr)
 	{
-		cout << errStr << "\n";
-		cout << "closing programm..." << endl;
+		cout << errStr << '\n';
+		cout << "Program is closing." << endl;
 		return 0;
 	}
 

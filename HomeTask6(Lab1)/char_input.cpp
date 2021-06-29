@@ -8,28 +8,44 @@
 
 using namespace std;
 
+/// <summary>
+/// Чтение входного потока содержащего кол-во и
+/// значения целочисленных элементов массива
+/// </summary>
+/// <param name="input">Поток ввода</param>
+/// <returns>
+/// Стурктуру содержащую информацию о длине и значениях элементов массива
+/// </returns>
 inline dynCharArr readCharStream(istream& input)
 {
 	dynCharArr arr;
 
-	if (!(input >> arr.len) || !(arr.len > 0))
-		throw string( "char array lenght read error\n" );
+	arr.arr = new char[100];
 
-	arr.arr = new char[arr.len];
-	for (int i = 0; i < arr.len; ++i)
-		if (!(input >> arr.arr[i]))
-			throw string( "char array read error\n" );
+	if (!(input >> arr.arr))
+		throw string( "char array read error\n" );
+
+	arr.len = strlen(arr.arr);
 
 	return arr;
 }
 
+/// <summary>
+/// Чтение из файла с заданным именем, который
+/// также содержит кол-во и значения целочисленных элементов массива
+/// </summary>
+/// <param name="fileName">Имя файла для считывания</param>
+/// <returns>
+/// Возвращает структуру содержащую ссылку на 
+/// заполненный массив и количество элементов в нём
+/// </returns>
 inline dynCharArrPair fileReadChar(string fileName)
 {
 	dynCharArrPair arrPair;
 	ifstream input( fileName );
 
 	if (!input.is_open())
-		throw string( "File doesn't exist \"" + fileName + "\"\n" );
+		throw string( "File \"" + fileName + "\" doesn't exist\n" );
 
 	try
 	{
@@ -47,6 +63,15 @@ inline dynCharArrPair fileReadChar(string fileName)
 	return arrPair;
 }
 
+/// <summary>
+/// Чтение из файла с предварительным запросом префикса имени файла.
+/// Считывание по следующему правилу: 
+/// кол-во элементов, затем значения символов
+/// </summary>
+/// <returns>
+/// Структуру содержащую ссылку на 
+/// заполненный сиволами массив и количество элементов в нём
+/// </returns>
 dynCharArrPair readCharArr()
 {
 	auto pref = filePrefix();
